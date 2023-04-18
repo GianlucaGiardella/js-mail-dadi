@@ -13,9 +13,11 @@ document.querySelector(".container").appendChild(resultDiv);
 
 function generate() {
     // random number generator
-    const userNum = Math.floor(Math.random() * (7 - 1) + 1);
-    const compNum = Math.floor(Math.random() * (7 - 1) + 1);
+    const userNum = Math.floor(Math.random() * 6) + 1;
+    const compNum = Math.floor(Math.random() * 6) + 1;
+    let result;
 
+    // result message
     if (userNum == compNum) {
         result = "I numeri sono uguali, parità."
     } else if (userNum > compNum) {

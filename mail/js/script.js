@@ -14,13 +14,14 @@ function control() {
     ];
 
     if (mail != "") {
-        let flag = false;
+        let mailFlag = false;
         for (let i = 0; i < mailList.length; i++) {
             if (mail === mailList[i]) {
-                flag = true;
+                mailFlag = true;
+                break;
             }
         }
-        if (flag) {
+        if (mailFlag) {
             newMail.className = "result green";
             newMail.innerHTML = "Accesso effettuato";
         } else {
